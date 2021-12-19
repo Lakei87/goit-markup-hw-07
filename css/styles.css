@@ -66,13 +66,13 @@ body {
 }
 
 /* Убираем стили у списков и ссылок */
-.list {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -94,13 +94,8 @@ body {
 }
 
 /* Убираем лишнее 4рх у картинок */
-.item-img {
+img {
   display: block;
-}
-
-/* Одинаковые стили для акцентов */
-.accent {
-  color: var(--accent-color);
 }
 
 /* textarea */
@@ -110,12 +105,12 @@ textarea {
 
 /* ==================Стили для страницы Студия================== */
 /* ================Шапка страницы============== */
-.header {
+.page-header {
   background-color: var(--primery-white-color);
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
@@ -125,26 +120,29 @@ textarea {
   align-items: center;
 }
 
-/* logo */
-.header .logo {
+.logo {
   margin-right: 93px;
   color: var(--primary-text-color);
 }
 
+.logo__accent {
+  color: var(--accent-color);
+}
+
 /* Главная навигация */
-.header .site-nav {
+.header-nav__list {
   display: flex;
 }
 
-.site-nav > .item {
+.header-nav__item {
   position: relative;
 }
 
-.site-nav .item:not(:last-child) {
+.header-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.header-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -154,16 +152,16 @@ textarea {
   transition: color 200ms var(--our-timing-effect);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-nav__link:hover,
+.header-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link-action {
+.header-nav__link--active {
   color: var(--accent-color);
 }
 
-.site-nav .link-action::after {
+.header-nav__link--active::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -175,7 +173,7 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.site-nav .link-hover::after {
+.header-nav__link--hover::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -190,49 +188,38 @@ textarea {
   transition: transform 250ms var(--our-timing-effect);
 }
 
-.site-nav .link-hover:hover::after {
+.header-nav__link--hover:hover::after {
   transform: scaleX(1);
 }
 
 /* Наши контакты */
-.header .site-contact {
+.header-contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contact-list {
-  display: flex;
-  margin-left: auto;
-  color: var(--secondary-text-color);
-  fill: var(--secondary-text-color);
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item:not(:last-child) {
+.header-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.header-contacts__link {
   display: flex;
   align-items: center;
 
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 
   transition: color 250ms var(--our-timing-effect),
     fill 250ms var(--our-timing-effect);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.header-contacts__link:hover,
+.header-contacts__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.contact-icon {
+.header-contacts__icon {
   margin-right: 10px;
 }
 
@@ -259,7 +246,7 @@ textarea {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 0 30px;
 
   font-weight: 900;
@@ -271,7 +258,7 @@ textarea {
 }
 
 /* ===Модалка нашего героя=== */
-.backdrop.is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -291,7 +278,7 @@ textarea {
     visibility 250ms var(--our-timing-effect);
 }
 
-.backdrop.is-hidden .modal {
+.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
@@ -333,7 +320,7 @@ textarea {
   fill: var(--accent-color);
 }
 
-.hero-form .form-title {
+.form__title {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -342,7 +329,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.hero-form .form-field {
+.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -350,7 +337,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.hero-form .input {
+.form__input {
   padding-left: 42px;
   width: 100%;
   height: 40px;
@@ -366,11 +353,11 @@ textarea {
   transition: outline 250ms var(--our-timing-effect);
 }
 
-.hero-form .input:focus {
+.form__input:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.hero-form .label {
+.form__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -378,7 +365,7 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.hero-form .icon {
+.form__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -386,15 +373,15 @@ textarea {
   transition: fill 250ms var(--our-timing-effect);
 }
 
-.hero-form .form-field:focus-within .icon {
+.form__field:focus-within .form__icon {
   fill: var(--accent-color);
 }
 
-.hero-form .comments {
+.form__field--margin {
   margin-bottom: 20px;
 }
 
-.hero-form textarea {
+.form__textarea {
   padding: 12px 16px;
   height: 120px;
   width: 100%;
@@ -408,25 +395,25 @@ textarea {
   transition: outline 250ms var(--our-timing-effect);
 }
 
-.hero-form textarea:focus {
+.form__textarea:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.hero-form textarea::placeholder {
+.form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-field {
+.checkbox {
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.checkbox-field input {
+.checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -437,7 +424,7 @@ textarea {
   overflow: hidden;
 }
 
-.checkbox-field .icon-check {
+.checkbox__icon {
   margin-right: 7px;
   width: 15px;
   height: 15px;
@@ -451,13 +438,13 @@ textarea {
     background-color 250ms var(--our-timing-effect);
 }
 
-.checkbox-field input:checked ~ .icon-check {
+.checkbox__input:checked ~ .checkbox__icon {
   background-image: url(../images/icon-check.svg);
   border: 2px solid transparent;
   background-color: var(--accent-color);
 }
 
-.checkbox-field .label {
+.checkbox__label {
   margin: 0;
   font-size: 14px;
   line-height: 1.7;
@@ -465,24 +452,24 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.checkbox-field .link {
+.checkbox__link {
   color: var(--accent-color);
 }
 
 /* ==== Преимущества компании ==== */
-.advant .list {
+.advant__list {
   display: flex;
 }
 
-.advant .item {
+.advant__item {
   width: calc((100%-3 * 30) / 4);
 }
 
-.advant .item:not(:last-child) {
+.advant__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advant-iconbox {
+.advant__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,7 +479,7 @@ textarea {
   background-color: var(--secondary-bgc);
 }
 
-.advant-title {
+.advant__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -503,7 +490,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.advant-text {
+.advant__text {
   margin: 0;
 
   font-size: 14px;
@@ -513,11 +500,11 @@ textarea {
 }
 
 /* =====Чем мы занимаемся ==== */
-.directions.section {
+.directions {
   padding-top: 0;
 }
 
-.directions-title {
+.directions__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -528,20 +515,20 @@ textarea {
   text-align: center;
 }
 
-.directions .list {
+.directions__list {
   display: flex;
   justify-content: center;
 }
 
-.directions .item {
+.directions__item {
   position: relative;
 }
 
-.directions .item:not(:last-child) {
+.directions__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.direction-box {
+.directions__inner {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -554,7 +541,7 @@ textarea {
   transform: translateY(-100%);
 }
 
-.direction-text {
+.directions__desc {
   margin: 0;
 
   font-weight: 700;
