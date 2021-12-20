@@ -557,7 +557,7 @@ textarea {
   background-color: var(--secondary-bgc);
 }
 
-.our-team .title {
+.our-team__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -568,12 +568,12 @@ textarea {
   text-align: center;
 }
 
-.ourteam-list {
+.our-team__list {
   display: flex;
   justify-content: center;
 }
 
-.ourteam-item {
+.our-team__item {
   padding-bottom: 30px;
   width: 270px;
 
@@ -585,15 +585,15 @@ textarea {
   border-radius: 0 0 4px 4px;
 }
 
-.ourteam-item:not(:last-child) {
+.our-team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.ourteam-item .item-img {
+.our-team__avatar {
   margin-bottom: 30px;
 }
 
-.ourteam-item .name {
+.our-team__name {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -603,7 +603,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.ourteam-item .profession {
+.our-team__profession {
   margin: 0 0 16px;
 
   font-size: 16px;
@@ -612,16 +612,16 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.ourteam-item .ourteam-links {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.ourteam-links > .sociallink:not(:nth-child(4n)) {
+.socials__item:not(:nth-child(4n)) {
   margin-right: 10px;
 }
 
-.ourteam-links .link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -636,8 +636,8 @@ textarea {
     background-color 250ms var(--our-timing-effect);
 }
 
-.ourteam-links .link:hover,
-.ourteam-links .link:focus {
+.socials__link:hover,
+.socials__link:focus {
   fill: var(--primery-white-color);
   background-color: var(--accent-color);
 }
@@ -646,7 +646,7 @@ textarea {
 .reg-custom {
   padding-top: 78px;
 }
-.regcustom-title {
+.reg-custom__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -657,16 +657,16 @@ textarea {
   text-align: center;
 }
 
-.regcustom-list {
+.reg-custom__list {
   display: flex;
   justify-content: center;
 }
 
-.regcustom-item:not(:nth-child(6n)) {
+.reg-custom__item:not(:nth-child(6n)) {
   margin-right: 30px;
 }
 
-.regcustom-link {
+.reg-custom__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -682,8 +682,8 @@ textarea {
     border 250ms var(--our-timing-effect);
 }
 
-.regcustom-link:hover,
-.regcustom-link:focus {
+.reg-custom__link:hover,
+.reg-custom__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
