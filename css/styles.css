@@ -696,25 +696,24 @@ textarea {
   background-color: var(--primery-black-color);
 }
 
-.footer .container {
+.footer__container {
   display: flex;
 }
 
-.address-box {
+/* Наши контакты в подвале страницы */
+.footer-contacts {
   margin-right: 70px;
 }
 
-/* logo */
-.footer .logo {
+.footer-contacts__logo {
   display: inline-block;
   margin-bottom: 20px;
 
   color: var(--primery-white-color);
 }
 
-/* Адрес города и улицы */
-.city-street {
-  margin-bottom: 6px;
+.footer-contacts__address {
+  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
@@ -723,12 +722,8 @@ textarea {
   color: var(--primery-white-color);
 }
 
-.footer-contacts {
-  margin: 0;
-}
-
-/* Наши контакты в подвале страницы */
-.footer-contacts .link {
+.footer-contacts__mail,
+.footer-contacts__tel {
   display: inline-block;
 
   font-style: normal;
@@ -740,13 +735,18 @@ textarea {
   transition: color 250ms var(--our-timing-effect);
 }
 
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+.footer-contacts__mail:hover,
+.footer-contacts__mail:focus {
   color: var(--accent-color);
 }
 
-.footer-mail {
-  margin-bottom: 6px;
+.footer-contacts__tel:hover,
+.footer-contacts__tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-contacts__mail {
+  margin-bottom: 9px;
 }
 
 /* Присоединяйтесь */
@@ -755,7 +755,7 @@ textarea {
   margin-top: 12px;
 }
 
-.joinus-title {
+.joinus__title {
   margin: 0 0 20px;
 
   font-weight: 700;
@@ -766,37 +766,9 @@ textarea {
   color: var(--primery-white-color);
 }
 
-.joinus > .list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.joinus .item:not(:nth-child(4n + 4)) {
-  margin-right: 10px;
-}
-
-.joinus .item:not(:nth-child(-n + 4)) {
-  margin-top: 10px;
-}
-
-.joinus .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-
+.socials__link--changecolor {
   fill: var(--primery-white-color);
-
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-
-  transition: background-color 250ms var(--our-timing-effect);
-}
-
-.joinus .link:hover,
-.joinus .link:focus {
-  background-color: var(--accent-color);
 }
 
 /* Подпишитесь на рассылку */
@@ -805,7 +777,7 @@ textarea {
   margin-left: auto;
 }
 
-.subscription-title {
+.subscription-form__title {
   margin: 0 0 20px;
 
   font-weight: 700;
@@ -816,11 +788,11 @@ textarea {
   color: var(--primery-white-color);
 }
 
-.subscription-form .form-field {
+.subscription-form__inner {
   display: inline-flex;
 }
 
-.subscription-form input {
+.subscription-form__input {
   margin-right: 12px;
   width: 358px;
   height: 50px;
@@ -839,24 +811,24 @@ textarea {
   transition: outline 250ms var(--our-timing-effect);
 }
 
-.subscription-form input:focus {
+.subscription-form__input:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.subscription-form input::placeholder {
+.subscription-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
 
-.subscription-form button {
+.subscription-form__button {
   position: relative;
   padding-left: 29px;
   padding-right: 62px;
 }
 
-.subscription-form .icon {
+.subscription-form__icon {
   position: absolute;
   top: 50%;
   right: 28px;
