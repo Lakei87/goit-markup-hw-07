@@ -841,7 +841,7 @@ textarea {
 /* ===================Стили для страницы Портфолио=============== */
 /* Навигация продуктов */
 .products__title {
-  visibility: hidden;
+  margin: 0;
 }
 
 .products-nav {
