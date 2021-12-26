@@ -1,4 +1,4 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -24,25 +24,25 @@ body {
   font-family: roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primery-white-color);
-}
+} */
 
 /* Секция */
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* Контейнер */
-.container {
+/* .container {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
   width: 1200px;
-}
+} */
 
 /* Общие стили для кнопок */
-.button {
+/* .button {
   margin: 0;
   padding: 0;
   border: 1px solid transparent;
@@ -63,10 +63,10 @@ body {
   border-radius: 4px;
 
   cursor: pointer;
-}
+} */
 
 /* Убираем стили у списков и ссылок */
-ul {
+/* ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -74,39 +74,38 @@ ul {
 
 a {
   text-decoration: none;
-}
+} */
 
 /* Одинаковые стили для нашего логотипа */
-.logo {
+/* .logo {
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
+  color: var(--primary-text-color);
+} */
 
 /* одинаковые стили для текста в шапке */
-.font-nav {
+/* .font-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
+} */
 
 /* Убираем лишнее 4рх у картинок */
-img {
+/* img {
   display: block;
 }
 
-/* textarea */
 textarea {
   resize: none;
-}
+} */
 
 /* ==================Стили для страницы Студия================== */
 /* ================Шапка страницы============== */
-.page-header {
-  background-color: var(--primery-white-color);
+/* .page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -122,15 +121,14 @@ textarea {
 
 .logo {
   margin-right: 93px;
-  color: var(--primary-text-color);
 }
 
 .logo__accent {
   color: var(--accent-color);
-}
+} */
 
 /* Главная навигация */
-.header-nav__list {
+/* .header-nav__list {
   display: flex;
 }
 
@@ -190,10 +188,10 @@ textarea {
 
 .header-nav__link--hover:hover::after {
   transform: scaleX(1);
-}
+} */
 
 /* Наши контакты */
-.header-contacts {
+/* .header-contacts {
   display: flex;
   margin-left: auto;
 }
@@ -221,11 +219,11 @@ textarea {
 
 .header-contacts__icon {
   margin-right: 10px;
-}
+} */
 
 /* ============Уникальный контент стрыницы=========== */
 /* ====Наш герой ==== */
-.hero {
+/* .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -242,7 +240,7 @@ textarea {
   background-color: #c4c4c4;
 }
 
-.hero-container {
+.hero__container {
   text-align: center;
 }
 
@@ -255,10 +253,10 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-white-color);
-}
+} */
 
 /* ===Модалка нашего героя=== */
-.is-hidden {
+.backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -278,7 +276,7 @@ textarea {
     visibility 250ms var(--our-timing-effect);
 }
 
-.is-hidden .modal {
+.backdrop--is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
@@ -297,7 +295,7 @@ textarea {
   transition: transform 250ms var(--our-timing-effect);
 }
 
-.backdrop .button-close {
+.backdrop .button--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -316,7 +314,7 @@ textarea {
   cursor: pointer;
 }
 
-.backdrop .button-close:hover {
+.backdrop .button--close:hover {
   fill: var(--accent-color);
 }
 

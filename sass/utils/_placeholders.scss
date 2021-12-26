@@ -1,0 +1,46 @@
+%flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%header-font-styles {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+%header-pseudo-elements {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+%primery-button {
+  min-width: 200px;
+  height: 50px;
+
+  font-family: $primary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $primery-white-color;
+
+  background-color: $accent-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
