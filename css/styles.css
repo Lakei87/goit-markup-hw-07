@@ -256,7 +256,7 @@ textarea {
 } */
 
 /* ===Модалка нашего героя=== */
-.backdrop--is-hidden {
+/* .backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -316,9 +316,9 @@ textarea {
 
 .backdrop .button--close:hover {
   fill: var(--accent-color);
-}
+} */
 
-.form__title {
+/* .form__title {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -375,7 +375,7 @@ textarea {
   fill: var(--accent-color);
 }
 
-.form__field--margin {
+.form__field--textarea {
   margin-bottom: 20px;
 }
 
@@ -452,10 +452,10 @@ textarea {
 
 .checkbox__link {
   color: var(--accent-color);
-}
+} */
 
 /* ==== Преимущества компании ==== */
-.advant__list {
+/* .advant__list {
   display: flex;
 }
 
@@ -495,10 +495,10 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
+} */
 
 /* =====Чем мы занимаемся ==== */
-.directions {
+/* .directions {
   padding-top: 0;
 }
 
@@ -548,10 +548,10 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-white-color);
-}
+} */
 
 /* ===== Наша команда==== */
-.our-team {
+/* .our-team {
   background-color: var(--secondary-bgc);
 }
 
@@ -638,10 +638,10 @@ textarea {
 .socials__link:focus {
   fill: var(--primery-white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* ====Постоянные клиенты==== */
-.reg-custom {
+/* .reg-custom {
   padding-top: 78px;
 }
 .reg-custom__title {
@@ -684,26 +684,26 @@ textarea {
 .reg-custom__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
+} */
 
 /* ================Подвал страницы================ */
-.footer {
+/* .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--primery-black-color);
 }
 
-.footer__container {
+.page-footer__container {
   display: flex;
-}
+} */
 
 /* Наши контакты в подвале страницы */
-.footer-contacts {
+/* .footer-contacts {
   margin-right: 70px;
 }
 
-.footer-contacts__logo {
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -745,10 +745,10 @@ textarea {
 
 .footer-contacts__mail {
   margin-bottom: 9px;
-}
+} */
 
 /* Присоединяйтесь */
-.joinus {
+/* .joinus {
   max-width: 206px;
   margin-top: 12px;
 }
@@ -767,7 +767,7 @@ textarea {
 .socials__link--changecolor {
   fill: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 
 /* Подпишитесь на рассылку */
 .subscription {
